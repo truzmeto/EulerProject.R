@@ -4,7 +4,7 @@
 # By considering the terms in the Fibonacci sequence whose values do not
 # exceed four million, find the sum of the even-valued terms.
 
-#my stupid method
+# brute force method
 x <- 0
 x[1] <- 1
 x[2] <- 2
@@ -19,23 +19,3 @@ repeat{
 
 x <- x[x < 4000000]
 sum(x[x%%2 == 0])
-
-#suggested method
-#limit <- 4000000
-#sum <- 0
-#a <- 1
-#b <- 1
-#repeat{
-    
-#    if(b < limit){
-#        sum <- sum + a
-#        h <- a + b
-#        a <- b
-#        b <- h
-#    }
-    
-#    if(b > limit){
-#        break
-#        b <- 0
-#    }
-#}
