@@ -47,6 +47,8 @@ for (i in 1000:n) {
 
 nth_tri
 
-
-
-
+# It took around 2 secx, which is not bad, but not very efficient for scaling!
+# Most efficient approach would be finding finding devisors of triangular number
+# by factoring degrees of primes.
+# nth_tri = p1^a1 + p2^a2 + .....
+# n_divs = (a1+1)*(a2+1)*.....

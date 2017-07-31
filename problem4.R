@@ -25,19 +25,11 @@ is_palindrome <- function(num) {
     }
 }
     
-## calculate the all pairwise products 900:999 
-## we assume that largest polindrome we are looking for is
-## a product of 3 digit num between 900 and 999
-## then we get all pairwise products by matrix multiplication, which is very fast!
-#mat <- matrix(900:999, nrow = 1)
-#mat <- t(mat) %*% (mat)
+## calculate the all pairwise products 900:999 we assume that largest
+## polindrome we are looking for is a product of 3 digit num between
+## 900 and 999 then we get all pairwise products by vector multiplication,
+## which is very fast and
 
-
-
-## calculate the all pairwise products 900:999 
-## we assume that largest polindrome we are looking for is
-## a product of 3 digit num between 900 and 999
-## then we get all pairwise products by vector multiplication, which is very fast and
 ## outputs matrix!
 vec <- sequence(100) + 899
 product <- vec %*% t(vec)
